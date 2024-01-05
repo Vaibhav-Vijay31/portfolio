@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Vijay - Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d0f6a5443.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png"  class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Science Student</p>
+                <h1>Hi, I'm <span>Vaibhav </span><br> Vijay: Byte bard</h1>
+            </div>
+        </div>
+    </div>
+
+   <!--------------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Welcome to my portfolio! I'm a dedicated data science student with a knack for web development. Proficient in PHP, MySQL, HTML, and CSS, I specialize in creating dynamic and user-friendly websites. My expertise extends to backend management, hosting, and ensuring optimal website performance. Passionate about the synergy between data science and web development, I'm eager to contribute innovative solutions to the tech landscape. Explore my projects, and let's connect for potential collaborations!
+                </p>
+                
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link "onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills" >
+                    <ul>
+                        <li><span>Backend</span><br>Development</li>
+                        <li><span>Web Hosting</span><br>Management</li>
+                        <li><span>Artificial Intelligence </span><br>Projects</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Participated in Smart India Hacakathon (2nd Round)</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>G H Raisoni College of Engineering, Pune</li>
+                        <li><span>2022</span><br>Lokmanya Tilak College of Science, Mumbai</li>
+                        <li><span>2020</span><br>Expert's International High School, Mumbai</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------services------------->
+
+<div id="services">
+
+    <div class="container">
+
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> Transform your digital presence with my individualized web design service. I'm specialized in crafting sophisticated, responsive websites that seamlessly merge aesthetics and functionality for impactful online experiences.</p>
+                <a href="">learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Backend Support</h2>
+                <p>Empower your online venture with my individualized backend support. I specialize in robust, efficient solutions ensuring seamless functionality and optimal performance for your web applications.</p>
+                <a href="">learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>AI/ML Solutions</h2>
+                <p>Explore AI/ML projects for smarter solutions. From predictive tools to image recognition, I create projects that harness the power of technology for practical and efficient outcomes.</p>
+                <a href="">learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!------------------portfolio---------------->
+
+<div id="portfolio">
+    <div class="container">
+
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Hotel Management Site</h3>
+                    <p>Efficient PHP and Ajax-powered hotel management site streamlines operations, enhances user experience, and ensures seamless functionality.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Gender & Age Recognition </h3>
+                    <p>OpenCV-based gender and age recognition system employs robust algorithms, delivering accurate results for enhanced facial analysis.</p>
+                    <a href="https://github.com/Vaibhav-Vijay31/myprojects/tree/main/Python%20Project%20on%20Gender%20Recognition"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>Crafted a visually appealing Spotify clone with HTML and CSS, offering a responsive design for optimal user experience.</p>
+                    <a href="https://github.com/Vaibhav-Vijay31/myprojects/tree/main/Spotify%20Web%20Clone%20Application"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href=""class="btn"> See More</a>
+
+
+    </div>
+</div>
+
+<!--------------------contact------------>
+<div id="contact">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Talk!</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>vaibhavvijay31@gmail.com</p>
+              
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/vaibhavvijay_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Vaibhav-Vijay31"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vaibhavvijay31/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text"name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="copyright">
+        <p>© 2024 Vaibhav. All rights reserved.  </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+    
+</body>
+</html>
