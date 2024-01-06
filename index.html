@@ -229,10 +229,15 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {
+          console.log('Success!', response);
+          // Add a redirect or page reload here
+          window.location.href = 'https://vaibhav-vijay.netlify.app/'; // Change to your desired URL
+        })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
+
     
 </body>
 </html>

@@ -292,6 +292,7 @@ display:inline-block ;
     text-decoration: none;
     color: white;
     transition: background 0.5s;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -340,6 +341,7 @@ display:inline-block ;
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
+    cursor: pointer;
 }
 
 .contact-right form{
