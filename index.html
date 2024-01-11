@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6d0f6a5443.js" crossorigin="anonymous"></script>
-   
 </head>
 <body>
     <div id="header">
@@ -64,7 +63,7 @@
 
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2023</span><br>Participated in Smart India Hackathon (2nd Round)</li>
+                        <li><span>2023</span><br>Participated in Smart India Hacakathon (2nd Round)</li>
                         
                     </ul>
                 </div>
@@ -172,9 +171,9 @@
                 <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form>
                     <input type="text"name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
@@ -187,52 +186,41 @@
         <p>© 2024 Vaibhav. All rights reserved.  </p>
     </div>
 </div>
-<script>
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname, event) {
-    for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-    }
-    for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
-
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
-
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
-    sidemenu.style.right = "0";
-}
-
-function closemenu() {
-    sidemenu.style.right = "-200px";
-}
-
-</script>
 <script>
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxtbBraYM65K2_QyBU3KiCqJTj5FeodjNPcYtrshaKqxGbGeBqnlvWO6OgLnmMRqCkkbw/exec';
-const form = document.forms['submit-to-google-sheet'];
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            console.log('Success!', response);
-            // Add a redirect or page reload here
-            window.location.href = 'https://vaibhav-vijay.netlify.app/'; // Change to your desired URL
-        })
-        .catch(error => console.error('Error!', error.message));
-});
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
 </script>
 
+<script>
+
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 
 
+</script>
     
 </body>
 </html>
